@@ -1,11 +1,13 @@
 <?php
 
+use App\Http\Controllers\CadastroProdutoController;
+use App\Livewire\ClienteCadastro;
+use App\Livewire\ProdutoCadastro;
 use Illuminate\Support\Facades\Route;
-use App\Http\Livewire\ClienteCadastro;
-use App\Livewire\ClienteCadastro as LivewireClienteCadastro;
-use Livewire\Livewire;
 
-Route::get('/cliente/cadastro', LivewireClienteCadastro::class);
+Route::get('/', function () {
+    return view('welcome');
+});
 
-
- 
+Route::get('/cliente-cadastro', ClienteCadastro::class);
+Route::get('/produto-cadastro', ProdutoCadastro::class);
