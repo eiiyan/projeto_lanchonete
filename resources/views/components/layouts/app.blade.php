@@ -10,7 +10,11 @@
     </head>
     <body>
         {{ $slot }}
+       
 
       @livewireScripts {{--parte do script--}}
     </body>
 </html>
+
+
+
